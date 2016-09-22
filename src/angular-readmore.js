@@ -52,17 +52,17 @@
                         foundWords = text.split(/\s+/);
 
                         if (foundWords.length > limit) {
-                            text = foundWords.slice(0, limit).join(' ') + ellipsis;
+                            text = foundWords.slice(0, limit).join(' ');
                             more = foundWords.slice(limit, count).join(' ');
-                            markup = text + moreText + '<span class="more-text">' + more + lessText + '</span>';
+                            markup = text + ellipsis + moreText + '<span class="more-text">' + more + lessText + '</span>';
                         }
 
                     } else { // Count characters
 
                         if (count > limit) {
-                            text = orig.slice(0, limit) + ellipsis;
+                            text = orig.slice(0, limit);
                             more = orig.slice(limit, count);
-                            markup = text + moreText + '<span class="more-text">' + more + lessText + '</span>';
+                            markup = text + ellipsis + moreText + '<span class="more-text">' + more + lessText + '</span>';
                         }
 
                     }
