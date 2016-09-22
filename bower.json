@@ -1,0 +1,25 @@
+{
+  "name": "angular-readmore",
+  "version": "1.0.0",
+  "homepage": "https://github.com/laffer1/angular-readmore",
+  "authors": [
+    "Lucas Holt <luke@foolishgames.com>",
+    "Joyce Cam"
+  ],
+  "description": "AngularJS 1.x library to cut text and provide a read more/ellipsis",
+  "main": "js/angular-readmore.js",
+  "keywords": [
+    "angularjs",
+    "jquery",
+    "readmore",
+    "ellipsis"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
