@@ -8,7 +8,7 @@
   ],
   "description": "AngularJS 1.x library to cut text and provide a read more/ellipsis",
   "main": [
-    "dist/angular-readmore.min.js",
+    "dist/angular-readmore.js",
     "css/angular-readmore.css"
   ],
   "keywords": [
