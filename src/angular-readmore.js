@@ -41,6 +41,7 @@
                     var foundWords = [];
                     var markup = text;
                     var more = '';
+                    var ellipsisMarkup = '<span class="ellipsis">'+ellipsis+ '</span>';
 
                     if (!angular.isUndefined(attr.words)) {
                         countBy = 'words';
@@ -54,7 +55,7 @@
                         if (foundWords.length > limit) {
                             text = foundWords.slice(0, limit).join(' ');
                             more = foundWords.slice(limit, count).join(' ');
-                            markup = text + ellipsis + moreText + '<span class="more-text">' + more + lessText + '</span>';
+                            markup = text + ellipsisMarkup + moreText + '<span class="more-text">' + more + lessText + '</span>';
                         }
 
                     } else { // Count characters
@@ -62,7 +63,7 @@
                         if (count > limit) {
                             text = orig.slice(0, limit);
                             more = orig.slice(limit, count);
-                            markup = text + ellipsis + moreText + '<span class="more-text">' + more + lessText + '</span>';
+                            markup = text + ellipsisMarkup + moreText + '<span class="more-text">' + more + lessText + '</span>';
                         }
 
                     }
@@ -71,10 +72,12 @@
                     elem.find('.read-more').on('click', function () {
                         $(this).hide();
                         elem.find('.more-text').addClass('show').slideDown();
+                        elem.find('.ellipsis').hide();
                     });
                     elem.find('.read-less').on('click', function () {
                         elem.find('.read-more').show();
                         elem.find('.more-text').hide().removeClass('show');
+                        elem.find('.ellipsis').show();
                     });
 
                 }
