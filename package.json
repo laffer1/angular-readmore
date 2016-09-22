@@ -1,0 +1,37 @@
+{
+  "name": "angular-readmore",
+  "description": "AngularJS 1.x library to cut text and provide a read more/ellipsis",
+  "version": "1.0.0",
+  "homepage": "http://github.com/laffer1/angular-readmore",
+  "author": [
+     "Lucas Holt <luke@foolishgames.com>",
+     "Joyce Cam"
+   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/laffer1/angular-readmore.git"
+  },
+  "engines": {
+    "node": ">= 0.12"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],  
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "~ 0.8.8",
+    "grunt": ">= 1.0.1",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-release": "~0.13.1",
+    "grunt-conventional-changelog": "6.1.0"
+  },
+  "scripts": {
+    "test": "grunt travis",
+    "test-single": "karma start test/karma.conf.js --single-run --browsers Chrome",
+    "test-server": "karma start test/karma.conf.js --browsers Chrome"
+  }
+}
