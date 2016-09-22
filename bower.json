@@ -7,7 +7,10 @@
     "Joyce Cam"
   ],
   "description": "AngularJS 1.x library to cut text and provide a read more/ellipsis",
-  "main": "js/angular-readmore.js",
+  "main": [
+    "js/angular-readmore.js",
+    "css/angular-readmore.css"
+  ],
   "keywords": [
     "angularjs",
     "jquery",
