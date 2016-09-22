@@ -26,10 +26,10 @@
                 content: '@'
             },
             link: function (scope, elem, attr, ctrl, transclude) {
-                var moreText = angular.isUndefined(scope.moreText) ? ' <a class="read-more">Read More...</a>' : ' <a class="read-more">' + scope.moreText + '</a>',
-                        lessText = angular.isUndefined(scope.lessText) ? ' <a class="read-less">Less ^</a>' : ' <a class="read-less">' + scope.lessText + '</a>',
-                        ellipsis = angular.isUndefined(scope.ellipsis) ? '' : scope.ellipsis,
-                        limit = angular.isUndefined(scope.limit) ? 150 : scope.limit;
+                var moreText = angular.isUndefined(scope.moreText) ? ' <a class="read-more">Read More...</a>' : ' <a class="read-more">' + scope.moreText + '</a>';
+                var lessText = angular.isUndefined(scope.lessText) ? ' <a class="read-less">Less ^</a>' : ' <a class="read-less">' + scope.lessText + '</a>';
+                var ellipsis = angular.isUndefined(scope.ellipsis) ? '' : scope.ellipsis;
+                var limit = angular.isUndefined(scope.limit) ? 150 : scope.limit;
 
                 function readmore(text) {
                     var orig = text;
