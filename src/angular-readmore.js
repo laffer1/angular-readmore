@@ -32,6 +32,9 @@
                 var limit = angular.isUndefined(scope.limit) ? 150 : scope.limit;
 
                 function readmore(text) {
+                    if (typeof text === 'undefined' || text === null) {
+                        return;
+                    }
                     var orig = text;
                     var regex = /\s+/gi;
                     var charCount = text.length;
