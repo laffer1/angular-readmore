@@ -1,6 +1,6 @@
 /**
  * AngularJS 1.x library to cut text and provide a read more/ellipsis
- * @version v1.0.1 - 2016-09-22
+ * @version v1.0.3 - 2016-09-26
  * @link http://github.com/laffer1/angular-readmore
  * @author Lucas Holt <luke@foolishgames.com>,Joyce Cam
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -39,6 +39,9 @@
                 var limit = angular.isUndefined(scope.limit) ? 150 : scope.limit;
 
                 function readmore(text) {
+                    if (typeof text === 'undefined' || text === null) {
+                        return;
+                    }
                     var orig = text;
                     var regex = /\s+/gi;
                     var charCount = text.length;
