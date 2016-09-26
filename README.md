@@ -10,8 +10,8 @@ Simple and easy-to-implement angular read more directive.
 
 #### Requirements
  
-+ Latest jQuery
-+ AngularJS 1.3+
++ jQuery > 1.9
++ AngularJS < 2
  
 
 #### Markup  
