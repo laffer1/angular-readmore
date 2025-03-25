@@ -1,7 +1,7 @@
 {
   "name": "angular-readmore",
   "description": "AngularJS 1.x library to cut text and provide a read more/ellipsis",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "http://github.com/laffer1/angular-readmore",
   "author": [
      "Lucas Holt <luke@foolishgames.com>",
